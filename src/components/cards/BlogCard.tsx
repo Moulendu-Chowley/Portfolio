@@ -1,4 +1,5 @@
 import { Card, CardButton, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
 
 interface BlogCardProps {
   image: string;
@@ -11,7 +12,7 @@ interface BlogCardProps {
 const BlogCard = ({ image, tag, title, description, link }: BlogCardProps) => (
   <Card className="flex flex-col h-full bg-[linear-gradient(60deg,#100f2e,#0f0029)]">
     <CardHeader className="p-0 relative">
-      <img src={image} alt={title} className="rounded-t-[20px] w-full h-48 object-cover" />
+      <Image src={image} alt={title} className="rounded-t-[20px] w-full h-48 object-cover" width={400} height={192} />
       <div className="absolute top-4 left-4">
         <CardButton>{tag}</CardButton>
       </div>

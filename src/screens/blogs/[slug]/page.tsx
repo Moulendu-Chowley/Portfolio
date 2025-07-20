@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { notFound, useParams } from 'next/navigation';
 import { useMemo } from 'react';
 import ReactMarkdown from 'react-markdown';
@@ -7,8 +8,7 @@ import { blogs } from '../../../data/blogs';
 const AUTHOR_AVATAR = '/Profile.png'; // fallback avatar
 
 function formatDate(dateStr: string) {
-  const date = new Date(dateStr);
-  return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+  return new Date(dateStr).toLocaleDateString();
 }
 
 export default function BlogDetailPage() {
@@ -38,7 +38,7 @@ export default function BlogDetailPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 drop-shadow-lg">{blog.title}</h1>
           <p className="text-[#cccccc] text-lg max-w-2xl mb-4">{blog.excerpt}</p>
           <div className="flex items-center gap-3 mt-4">
-            <img src={AUTHOR_AVATAR} alt={blog.author} className="w-10 h-10 rounded-full border-2 border-[#916be7]" />
+            <Image src={AUTHOR_AVATAR} alt={blog.author} className="w-10 h-10 rounded-full border-2 border-[#916be7]" width={40} height={40} />
             <div>
               <div className="text-white font-medium">{blog.author}</div>
               <div className="text-[#bcb9d1] text-xs">{formatDate(blog.date)} &bull; {blog.readingTime}</div>

@@ -16,7 +16,7 @@ export const blogs: Blog[] = [
     slug: "2025-frontend-stack",
     date: "2025-03-19",
     tags: ["frontend", "tools", "productivity"],
-    excerpt: "As a Frontend Developer in 2025, I've fine-tuned my development environment with a set of powerful tools that enhance productivity, efficiency, and customization. Let me walk you through my stack and how these tools help me build better, faster, and more maintainable projects!",
+    excerpt: "As a Frontend Developer in 2025, I&apos;ve fine-tuned my development environment with a set of powerful tools that enhance productivity, efficiency, and customization. Let me walk you through my stack and how these tools help me build better, faster, and more maintainable projects!",
     image: "/project1.png",
     content: `# My 2025 Stack as a Frontend Developer\n\nAs a Frontend Developer in 2025, my workflow is centered around tools that enable me to work faster and more effectively.\n\n## Why the Right Stack Matters\n\nThe tools you choose shape your development experience. A well-curated stack not only boosts productivity but also makes coding enjoyable and sustainable in the long run.\n\n## My Stack\n\n- Next.js\n- Tailwind CSS\n- TypeScript\n- Vite\n- ...\n\n## Final Thoughts\n\nChoosing the right stack can dramatically improve productivity.`,
     readingTime: "4 min read",

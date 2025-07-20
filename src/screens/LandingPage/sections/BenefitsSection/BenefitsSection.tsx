@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Card, CardButton } from "../../../../components/ui/card";
 import { PageBreak } from "../../../../components/ui/PageBreak";
@@ -29,10 +30,12 @@ export const BenefitsSection = () => {
     <section id="benefits" className="flex flex-col items-center w-full relative px-6 py-16 bg-[#0b011d]">
       <PageBreak />
       <div className="relative w-full h-auto flex flex-col items-center md:h-[120px] mb-12 mt-2 md:-mt-14">
-        <img
+        <Image
           src="/beniTitle.png"
           alt="Beni Title Background"
           className="absolute left-1/2 top-[14px] md:-top-[10px] -translate-x-1/2 md:w-[1200px] md:h-[180px] object-contain opacity-100 pointer-events-none select-none z-0"
+          width={1200}
+          height={180}
         />
         <h2 className="relative z-10 w-full font-['Inter','Helvetica'] font-semibold text-white text-[48px] md:text-[64px] text-center tracking-[0.50px] md:leading-[76.8px] mt-[-14px] md:mt-0">
           Benefits.
@@ -67,9 +70,9 @@ export const BenefitsSection = () => {
               transition={{ duration: 0.4, ease: 'easeInOut' }}
               style={{ display: 'flex' }}
             >
-              <img src="/tabletsc.svg" alt="Tablet" className="relative z-0 w-[140px] h-[180px] md:w-[200px] md:h-[240px] object-contain -mr-6 md:-mr-14" />
-              <img src="/mobilesc.svg" alt="Mobile" className="relative z-1 w-[60px] h-[110px] md:w-[90px] md:h-[150px] object-contain md:mx-4" />
-              <img src="/laptopsc.svg" alt="Laptop" className="relative z-0 w-[200px] h-[140px] md:w-[290px] md:h-[200px] object-contain -ml-6 md:-ml-14" />
+              <Image src="/tabletsc.svg" alt="Tablet" className="relative z-0 w-[140px] h-[180px] md:w-[200px] md:h-[240px] object-contain -mr-6 md:-mr-14" width={200} height={240} />
+              <Image src="/mobilesc.svg" alt="Mobile" className="relative z-1 w-[60px] h-[110px] md:w-[90px] md:h-[150px] object-contain md:mx-4" width={90} height={150} />
+              <Image src="/laptopsc.svg" alt="Laptop" className="relative z-0 w-[200px] h-[140px] md:w-[290px] md:h-[200px] object-contain -ml-6 md:-ml-14" width={290} height={200} />
             </motion.div>
           </div>
         </Card>
@@ -285,7 +288,7 @@ export const BenefitsSection = () => {
             <Spotlight className="w-full h-full" fill="#916be7" fillOpacity={0.12} />
           </div>
           {/* CMS Image */}
-          <img src="/cms.png" alt="Custom CMS" className="relative z-10 w-[60%] md:max-w-[320px] md:mt-10 mb-3 md:mb-6" />
+          <Image src="/cms.png" alt="Custom CMS" className="relative z-10 w-[60%] md:max-w-[320px] md:mt-10 mb-3 md:mb-6" width={320} height={180} />
           {/* Title */}
           <div className="relative z-10 text-center mb-4 md:mb-8">
             <span className="block text-[18px] md:text-2xl font-semibold text-white/80 leading-tight">Powerful, Custom</span>
@@ -310,7 +313,7 @@ export const BenefitsSection = () => {
           <Sparkle className="absolute inset-0 w-full h-full z-0" background="transparent" particleColor="#fff" minSize={.5} maxSize={2} speed={2} particleDensity={100} />
           {/* Text */}
           <div className="absolute md:left-[40px] left-4 md:top-[70px] top-4 text-left z-10">
-            <div className="text-white/100 text-[16px] md:text-2xl font-semibold font-['Inter','Helvetica'] leading-relaxed inline-block mr-1">Clear & Consistent</div>
+            <div className="text-white/100 text-[16px] md:text-2xl font-semibold font-['Inter','Helvetica'] leading-relaxed inline-block mr-1">Clear &amp; Consistent</div>
             <div className="text-[#916be7] text-[16px] md:text-2xl font-semibold font-['Inter','Helvetica'] leading-relaxed inline-block">Communication</div>
           </div>
           <div className="absolute md:left-[40px] left-4 md:top-[120px] top-10 text-left z-10">

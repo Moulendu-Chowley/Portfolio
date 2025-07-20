@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface TestimonialCardProps {
@@ -9,7 +10,7 @@ interface TestimonialCardProps {
 }
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({
-  quote = <><span className="font-bold text-white">Moulendu's</span> <span className="font-medium text-white">work is bloody </span><span className="font-medium text-[#916be7]">incredible.</span></>,
+  quote = <><span className="font-bold text-white">Moulendu&apos;s</span> <span className="font-medium text-white">work is bloody </span><span className="font-medium text-[#916be7]">incredible.</span></>,
   authorName = "Nikhil Ali",
   authorRole = "Youtuber, Entrepreneur",
   authorAvatar = "/nikhil.png",
@@ -22,7 +23,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           {quote}
         </p>
         <div className="flex items-center gap-4 mt-2">
-          <img src="/nikhil.png" alt={authorName} className="w-10 h-10 rounded-full" />
+          <Image src="/nikhil.png" alt={authorName} className="w-10 h-10 rounded-full" width={40} height={40} />
           <div className="flex flex-col items-start">
             <div className="font-['Inter',Helvetica] font-normal text-white text-sm">{authorName}</div>
             <div className="font-['Inter',Helvetica] font-normal text-[#ffffff66] text-xs">{authorRole}</div>
@@ -30,8 +31,8 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         </div>
       </div>
       {/* Double quote icons */}
-      <img src="/quote1.svg" alt="Quote left" className="absolute w-10 h-10 top-2 left-2 opacity-30" />
-      <img src="/quote2.svg" alt="Quote right" className="absolute w-10 h-10 bottom-2 right-2 opacity-30" />
+      <Image src="/quote1.svg" alt="Quote left" className="absolute w-10 h-10 top-2 left-2 opacity-30" width={40} height={40} />
+      <Image src="/quote2.svg" alt="Quote right" className="absolute w-10 h-10 bottom-2 right-2 opacity-30" width={40} height={40} />
     </div>
   );
 };
