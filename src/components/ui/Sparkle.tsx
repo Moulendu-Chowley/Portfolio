@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
-import type { Container, SingleOrMultiple } from "@tsparticles/engine";
+import type { SingleOrMultiple } from "@tsparticles/engine";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { motion, useAnimation } from "framer-motion";
@@ -38,7 +38,7 @@ export const Sparkle = (props: SparkleProps) => {
   }, []);
   const controls = useAnimation();
 
-  const particlesLoaded = async (container?: Container) => {
+  const particlesLoaded = async (container?: unknown) => {
     if (container) {
       controls.start({
         opacity: 1,

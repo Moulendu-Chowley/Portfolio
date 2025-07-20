@@ -1,5 +1,6 @@
 import * as React from "react";
 
+import Image from "next/image";
 import { cn } from "../../lib/utils";
 
 const Card = React.forwardRef<
@@ -84,15 +85,15 @@ const CardButton: React.FC<CardButtonProps> = ({ children, className = "", icon 
     className={`px-2 py-1 bg-[linear-gradient(60deg,#100f2e,#0f0029)] rounded-[40px] outline outline-[0.50px] outline-offset-[-0.50px] outline-[#6971a2]/40 flex justify-center items-center ${className}`}
   >
     {icon && (typeof icon === 'string' ? (
-      <img src={icon} alt="icon" className="w-4 h-4 max-w-4.5 max-h-4.5 flex-shrink-0" />
+      <Image src={icon} alt="icon" width={24} height={24} className="mr-2" />
     ) : (
-      <span className="w-4 h-4 max-w-4.5 max-h-4.5 flex-shrink-0 flex items-center justify-center">{icon}</span>
+      icon
     ))}
     <div className={`text-[#cccccc] text-[10px] md:text-[12px] font-medium [font-family:'Inter',Helvetica]${icon ? ' ml-2' : ''}`}>{children}</div>
   </div>
 );
 
 export {
-  Card, CardButton, CardContent, CardDescription, CardFooter, CardHeader, CardTitle
+    Card, CardButton, CardContent, CardDescription, CardFooter, CardHeader, CardTitle
 };
 

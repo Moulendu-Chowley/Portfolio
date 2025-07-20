@@ -8,6 +8,7 @@ import {
     useMotionValueEvent,
     useScroll,
 } from "framer-motion";
+import Image from "next/image";
 import Link from 'next/link';
 import { useRef, useState } from "react";
 
@@ -67,7 +68,7 @@ const Navbar = () => {
           href="#"
           className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
         >
-          <img src="/logo.svg" alt="logo" width={110} height={110} />
+          <Image src="/logo.svg" alt="logo" width={110} height={110} />
         </a>
         <motion.div
           className={cn(
@@ -116,7 +117,7 @@ const Navbar = () => {
             href="#"
             className="relative z-20 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
           >
-            <img src="/logo.svg" alt="logo" width={100} height={100} />
+            <Image src="/logo.svg" alt="logo" width={100} height={100} />
           </a>
           <button
             className="z-30 p-2"

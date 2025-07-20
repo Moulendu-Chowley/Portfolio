@@ -23,7 +23,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           {quote}
         </p>
         <div className="flex items-center gap-4 mt-2">
-          <Image src="/nikhil.png" alt={authorName} className="w-10 h-10 rounded-full" width={40} height={40} />
+          <Image src={authorAvatar} alt={authorName} className="w-10 h-10 rounded-full" width={40} height={40} />
           <div className="flex flex-col items-start">
             <div className="font-['Inter',Helvetica] font-normal text-white text-sm">{authorName}</div>
             <div className="font-['Inter',Helvetica] font-normal text-[#ffffff66] text-xs">{authorRole}</div>
