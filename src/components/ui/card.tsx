@@ -85,9 +85,9 @@ const CardButton: React.FC<CardButtonProps> = ({ children, className = "", icon 
     className={`px-2 py-1 bg-[linear-gradient(60deg,#100f2e,#0f0029)] rounded-[40px] outline outline-[0.50px] outline-offset-[-0.50px] outline-[#6971a2]/40 flex justify-center items-center ${className}`}
   >
     {icon && (typeof icon === 'string' ? (
-      <Image src={icon} alt="icon" width={24} height={24} className="mr-2" />
+      <Image src={icon} alt="icon" width={14} height={14} className="w-[10px] h-[10px] md:w-[14px] md:h-[14px] mr-2" />
     ) : (
-      icon
+      <span className="w-[10px] h-[10px] md:w-[14px] md:h-[14px] flex items-center justify-center mr-2">{icon}</span>
     ))}
     <div className={`text-[#cccccc] text-[10px] md:text-[12px] font-medium [font-family:'Inter',Helvetica]${icon ? ' ml-2' : ''}`}>{children}</div>
   </div>

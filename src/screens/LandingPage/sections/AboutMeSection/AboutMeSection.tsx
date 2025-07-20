@@ -68,7 +68,7 @@ export const AboutMeSection = () => {
               </>
             }
             tags={tags}
-            className="w-full h-auto flex flex-col"
+            className="w-auto h-auto flex flex-col"
           />
         </motion.div>
         {/* Stats Cards + Testimonial */}

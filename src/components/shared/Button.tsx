@@ -36,7 +36,7 @@ export const CardButton = ({ icon, children, className }: CardButtonProps) => (
     className={`self-stretch px-5 py-1.5 rounded-[40px] outline outline-[0.50px] outline-offset-[-0.50px] outline-[#6971a2]/40 inline-flex justify-center items-center gap-2.5 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg active:translate-y-0 active:outline-[#916be7] active:outline-2 ${className || ""}`}
     style={{ background: "var(--gradient-cardbutton)" }}
   >
-    {icon && <div className="w-[9.60px] h-3.5 bg-[#916be7] flex-shrink-0 flex items-center justify-center">{icon}</div>}
+    {icon && <div className="w-2 h-2 bg-[#916be7] flex-shrink-0 flex items-center justify-center">{icon}</div>}
     <div className="justify-start text-[#cccccc] text-[13px] font-medium font-['Inter','Helvetica']">{children}</div>
   </div>
 );
