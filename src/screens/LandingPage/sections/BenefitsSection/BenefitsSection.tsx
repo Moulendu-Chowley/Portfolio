@@ -275,7 +275,7 @@ export const BenefitsSection = () => {
             </div>
             {/* Clock SVG below text on mobile, right on md */}
             <div className="flex items-center justify-center mt-6 md:mt-0 md:ml-4 md:self-center md:mr-[40px] z-0">
-              <img src="/clockcard.svg" alt="Clock Card" className="w-[110px] h-[110px] md:w-[180px] md:h-[180px]" />
+              <Image src="/clockcard.svg" alt="Clock Card" className="w-[110px] h-[110px] md:w-[180px] md:h-[180px]" width={180} height={180} />
             </div>
           </div>
         </Card>

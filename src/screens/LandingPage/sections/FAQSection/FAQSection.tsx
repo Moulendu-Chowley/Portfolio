@@ -37,7 +37,7 @@ const FAQSection = () => {
       </div>
       {/* FAQ List */}
       <div className="w-full max-w-2xl mx-auto flex flex-col gap-2 sm:gap-3 md:gap-4">
-        {faqTabs[activeTab].questions.map((q, i) => (
+        {faqTabs[activeTab].questions.map((q) => (
           <div
             key={q}
             className="w-full px-2 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 rounded-2xl bg-[linear-gradient(150deg,#100F2E_0%,#0F002A_100%)] outline outline-1 outline-[#6971a2]/40 flex items-center justify-between text-left transition-all duration-200 hover:scale-[1.01] hover:shadow-lg"

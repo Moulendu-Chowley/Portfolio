@@ -17,7 +17,7 @@ const SocialLinksCard: React.FC<SocialLinksCardProps> = ({ links, className = ""
     <div className={`flex flex-col w-[225px] items-center justify-center gap-2 px-2 py-6 rounded-[20px] overflow-hidden border border-[#28204a] bg-[linear-gradient(138deg,rgba(16,15,46,1)_0%,rgba(15,0,42,1)_100%)] ${className}`}>
       <div className="flex flex-col items-center w-full gap-2 mb-2">
         <div className="flex items-center gap-2 px-2.5 py-1.5">
-          <img className="w-4 h-4" alt="Follow icon" src="/follow.svg" />
+          <Image className="w-4 h-4" alt="Follow icon" src="/follow.svg" width={16} height={16} />
           <span className="font-['Inter',Helvetica] font-medium text-[#999999] text-sm">Follow Me</span>
         </div>
         <h4 className="font-['Inter',Helvetica] font-semibold text-[#e6e6e6] text-base leading-6 whitespace-nowrap">Online Presence</h4>
