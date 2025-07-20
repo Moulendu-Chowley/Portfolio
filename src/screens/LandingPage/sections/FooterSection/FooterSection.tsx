@@ -40,7 +40,7 @@ export const FooterSection = ()=> {
             </span>
           </h2>
           <p className="text-[#c1c2d3] text-base text-center tracking-[-0.16px] leading-[22.4px]">
-            Reach out to me today and let's discuss how I can help you achieve
+            Reach out to me today and let&apos;s discuss how I can help you achieve
             your goals.
           </p>
           <Link href="/contact">
