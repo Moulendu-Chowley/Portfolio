@@ -1,4 +1,5 @@
 import { Button, SocialIconButton } from "@/components/shared/Button";
+import Image from "next/image";
 import Link from 'next/link';
 
 export const FooterSection = ()=> {
@@ -58,10 +59,12 @@ export const FooterSection = ()=> {
                 key={index}
                 icon={
                   social.imgSrc ? (
-                    <img
-                      className="w-3 h-3 md:w-6 md:h-6"
-                      alt={social.name}
+                    <Image
                       src={social.imgSrc}
+                      alt={social.name}
+                      width={24}
+                      height={24}
+                      className="w-3 h-3 md:w-6 md:h-6"
                     />
                   ) : null
                 }

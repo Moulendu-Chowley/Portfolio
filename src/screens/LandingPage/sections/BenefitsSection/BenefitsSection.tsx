@@ -300,7 +300,7 @@ export const BenefitsSection = () => {
         {/* Grid background - smaller, centered, radial mask */}
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] h-[70%] pointer-events-none z-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.07)_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(circle,rgba(255,255,255,0.7)_60%,transparent_100%)]" />
             {/* Large faded SEO SVG */}
-            <img src="/SEO.svg" alt="SEO" className="absolute inset-0 w-auto h-full p-5 md:p-10 object-contain z-0 select-none pointer-events-none" />
+            <Image src="/SEO.svg" alt="SEO" className="absolute inset-0 w-auto h-full p-5 md:p-10 object-contain z-0 select-none pointer-events-none" width={200} height={200} />
             {/* Title */}
            <div className="relative z-10 text-center mb-4 md:mb-8">
            <span className="text-[18px] md:text-2xl font-bold text-[#916be7]">SEO</span>
@@ -321,8 +321,8 @@ export const BenefitsSection = () => {
             <div className="text-[#916be7] text-[16px] md:text-2xl font-semibold font-['Inter','Helvetica'] leading-relaxed inline-block">Experience</div>
           </div>
           {/* Planets */}
-          <img src="/Planetorange.svg" alt="Planet Orange" className="absolute left-[-10px] md:left-[-10px] bottom-[-10px] md:bottom-[-10px] w-[100px] md:w-[120px] h-[100px] md:h-[120px] z-8" style={{ filter: "drop-shadow(0 0 32px rgba(255,172,77,0.5))" }} />
-          <img src="/Planetpurple.svg" alt="Planet Purple" className="absolute right-[10px] md:right-[30px] top-[10px] md:bottom-[20px] w-[160px] md:w-[200px] h-[160px] md:h-[200px] z-8" style={{ filter: "drop-shadow(0 0 40px rgba(145,108,231,0.5))" }} />
+          <Image src="/Planetorange.svg" alt="Planet Orange" className="absolute left-[-10px] md:left-[-10px] bottom-[-10px] md:bottom-[-10px] w-[100px] md:w-[120px] h-[100px] md:h-[120px] z-8" style={{ filter: "drop-shadow(0 0 32px rgba(255,172,77,0.5))" }} width={120} height={120} />
+          <Image src="/Planetpurple.svg" alt="Planet Purple" className="absolute right-[10px] md:right-[30px] top-[10px] md:bottom-[20px] w-[160px] md:w-[200px] h-[160px] md:h-[200px] z-8" style={{ filter: "drop-shadow(0 0 40px rgba(145,108,231,0.5))" }} width={200} height={200} />
         </Card>
       </div>
     </section>

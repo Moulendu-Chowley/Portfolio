@@ -14,7 +14,6 @@ export default function useCountUp(target: number | null, duration = 1200) {
 
   useEffect(() => {
     if (target === null || !isInView) return;
-    let start = 0;
     let startTime: number | null = null;
     const step = (timestamp: number) => {
       if (!startTime) startTime = timestamp;

@@ -15,15 +15,13 @@ export default function BlogDetailPage() {
   const params = useParams();
   const slug = Array.isArray(params?.slug) ? params.slug[0] : params?.slug;
   const blog = useMemo(() => blogs.find(b => b.slug === slug), [slug]);
-
-  if (!blog) return notFound();
-
   // Extract headings for TOC
   const headings = useMemo(() => {
     const regex = /^##\s+(.*)$/gm;
-    const matches = [...blog.content.matchAll(regex)];
+    const matches = blog ? [...blog.content.matchAll(regex)] : [];
     return matches.map(m => m[1]);
-  }, [blog.content]);
+  }, [blog]);
+  if (!blog) return notFound();
 
   return (
     <div className="min-h-screen bg-[#0b011d] w-full flex flex-col items-center">
@@ -53,7 +51,7 @@ export default function BlogDetailPage() {
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
               components={{
-                h2: ({node, ...props}) => <h2 id={props.children?.toString().replace(/\s+/g, '-').toLowerCase()} {...props} />,
+                h2: (props) => <h2 id={props.children?.toString().replace(/\s+/g, '-').toLowerCase()} {...props} />,
               }}
             >
               {blog.content}
