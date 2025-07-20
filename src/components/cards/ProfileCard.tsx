@@ -28,7 +28,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
           <div className="flex flex-col justify-start items-start gap-2">
             <div className="text-[#e6e6e6] text-[18px] md:text-[24px] font-semibold [font-family:'Inter',Helvetica] leading-normal">{name}</div>
             <div className="flex justify-start items-center gap-1">
-              <span className="text-[#999999] text-sm font-medium [font-family:'Inter',Helvetica]">I'm a</span>
+              <span className="text-[#999999] text-sm font-medium [font-family:'Inter',Helvetica]">I&apos;m a</span>
               <span className="text-[#916be7] text-sm font-semibold [font-family:'Inter',Helvetica]">{role}</span>
             </div>
           </div>

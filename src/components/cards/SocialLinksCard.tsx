@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface SocialLink {
@@ -31,7 +32,7 @@ const SocialLinksCard: React.FC<SocialLinksCardProps> = ({ links, className = ""
             className="w-full"
           >
             <div className="flex items-center gap-2 px-3 py-2 rounded-xl transition shadow-sm cursor-pointer bg-[linear-gradient(60deg,#100f2e,#0f0029)] outline outline-[0.50px] outline-offset-[-0.50px] outline-[#6971a2]/40 border border-transparent bg-clip-padding mx-4">
-              <img className="w-5 h-5" alt={link.label} src={link.icon} />
+              <Image src={link.icon} alt={link.label} width={24} height={24} />
               <span className="font-['Inter',Helvetica] font-medium text-[#cccccc] text-base">{link.label}</span>
             </div>
           </a>
