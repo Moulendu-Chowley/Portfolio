@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -38,13 +39,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="icon" href="/smallLogo.svg" type="image/svg+xml" />
-      </head>
-      <body className="antialiased">
-        {children}
-      </body>
-    </html>
+    <>
+      <SpeedInsights />
+      <html lang="en">
+        <head>
+          <link rel="icon" href="/smallLogo.svg" type="image/svg+xml" />
+        </head>
+        <body className="antialiased">
+          {children}
+        </body>
+      </html>
+    </>
   );
 }
