@@ -36,7 +36,7 @@ export const projects = [
     title: "Freeway Analytics",
     description: "From SIM provider to IoT leader - Advanced analytics dashboard for telecommunications and IoT data visualization.",
     image: "/project1.png",
-    year: "2023",
+    year: "2024",
     bulletPoints: [
       "Data Visualization",
       "IoT Dashboard Design",
@@ -47,7 +47,7 @@ export const projects = [
     title: "Digital Marketplace",
     description: "E-commerce platform with advanced filtering and seamless checkout experience for modern consumers.",
     image: "/project2.png", 
-    year: "2023",
+    year: "2024",
     bulletPoints: [
       "E-commerce Platform",
       "Payment Integration",
@@ -58,7 +58,7 @@ export const projects = [
     title: "Creative Portfolio",
     description: "Minimalist portfolio showcase for creative professionals with smooth animations and modern aesthetics.",
     image: "/project3.png",
-    year: "2023", 
+    year: "2024", 
     bulletPoints: [
       "Portfolio Design",
       "Animation & Interactions",

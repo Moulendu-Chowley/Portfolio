@@ -1,6 +1,6 @@
 "use client";
 
-import ModernProjectCard from "@/components/cards/ModernProjectCard";
+import BentoProjectCard from "@/components/cards/BentoProjectCard";
 import { Button } from "@/components/shared/Button";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -9,7 +9,6 @@ import { projects } from "../../../../data/projects";
 
 export const WorksSection = () => {
   if (!projects || projects.length === 0) return null;
-  const displayProjects = projects.slice(0, 6);
 
   return (
     <section
@@ -34,61 +33,125 @@ export const WorksSection = () => {
         </p>
       </motion.div>
 
-      {/* Projects Grid */}
+      {/* Bento Grid Layout */}
       <div className="w-full max-w-7xl mx-auto">
-        {/* Desktop Grid Layout */}
-        <div className="hidden md:grid md:grid-cols-12 md:grid-rows-6 gap-6 h-[800px]">
-          {/* Large featured project - spans 6 cols, 4 rows */}
-          <ModernProjectCard
-            {...displayProjects[0]}
-            size="large"
-            className="col-span-6 row-span-4"
+        {/* Desktop Bento Grid */}
+        <div className="hidden lg:grid grid-cols-6 grid-rows-4 gap-6 h-[900px]">
+          {/* Large featured project - top left */}
+          <BentoProjectCard
+            {...projects[0]}
+            className="col-span-3 row-span-3"
             index={0}
           />
           
-          {/* Medium project - spans 6 cols, 2 rows */}
-          <ModernProjectCard
-            {...displayProjects[1]}
-            size="medium"
-            className="col-span-6 row-span-2"
+          {/* Medium project - top right */}
+          <BentoProjectCard
+            {...projects[1]}
+            className="col-span-3 row-span-2"
             index={1}
           />
           
-          {/* Small project - spans 3 cols, 2 rows */}
-          <ModernProjectCard
-            {...displayProjects[2]}
-            size="small"
-            className="col-span-3 row-span-2"
+          {/* Small project - middle right */}
+          <BentoProjectCard
+            {...projects[2]}
+            className="col-span-2 row-span-1"
             index={2}
           />
           
-          {/* Medium project - spans 6 cols, 2 rows */}
-          <ModernProjectCard
-            {...displayProjects[1]}
-            size="medium"
-            className="col-span-6 row-span-2"
+          {/* Small project - bottom right */}
+          <BentoProjectCard
+            {...projects[3]}
+            className="col-span-1 row-span-1"
             index={3}
           />
           
-          {/* Small project - spans 3 cols, 2 rows */}
-          <ModernProjectCard
-            {...displayProjects[2]}
-            size="small"
-            className="col-span-3 row-span-2"
+          {/* Wide project - bottom spanning 3 cols */}
+          <BentoProjectCard
+            {...projects[4]}
+            className="col-span-3 row-span-1"
+            index={4}
+          />
+        </div>
+
+        {/* Tablet Grid Layout */}
+        <div className="hidden md:grid lg:hidden grid-cols-4 grid-rows-3 gap-6 h-[700px]">
+          {/* Large featured project */}
+          <BentoProjectCard
+            {...projects[0]}
+            className="col-span-2 row-span-2"
+            index={0}
+          />
+          
+          {/* Medium projects */}
+          <BentoProjectCard
+            {...projects[1]}
+            className="col-span-2 row-span-1"
+            index={1}
+          />
+          
+          <BentoProjectCard
+            {...projects[2]}
+            className="col-span-1 row-span-1"
+            index={2}
+          />
+          
+          <BentoProjectCard
+            {...projects[3]}
+            className="col-span-1 row-span-1"
+            index={3}
+          />
+          
+          {/* Wide project */}
+          <BentoProjectCard
+            {...projects[4]}
+            className="col-span-2 row-span-1"
             index={4}
           />
         </div>
 
         {/* Mobile Grid Layout */}
-        <div className="grid md:hidden grid-cols-1 gap-6">
-          {displayProjects.slice(0, 4).map((project, idx) => (
-            <ModernProjectCard
-              key={idx}
-              {...project}
-              size="medium"
-              index={idx}
+        <div className="grid md:hidden grid-cols-2 gap-4">
+          {/* Featured project spans full width */}
+          <BentoProjectCard
+            {...projects[0]}
+            className="col-span-2 h-[280px]"
+            index={0}
+          />
+          
+          {/* Two medium projects side by side */}
+          <BentoProjectCard
+            {...projects[1]}
+            className="col-span-1 h-[220px]"
+            index={1}
+          />
+          
+          <BentoProjectCard
+            {...projects[2]}
+            className="col-span-1 h-[220px]"
+            index={2}
+          />
+          
+          {/* Wide project spans full width */}
+          <BentoProjectCard
+            {...projects[3]}
+            className="col-span-2 h-[200px]"
+            index={3}
+          />
+          
+          {/* Two more projects */}
+          <BentoProjectCard
+            {...projects[4]}
+            className="col-span-1 h-[220px]"
+            index={4}
+          />
+          
+          {projects[5] && (
+            <BentoProjectCard
+              {...projects[5]}
+              className="col-span-1 h-[220px]"
+              index={5}
             />
-          ))}
+          )}
         </div>
       </div>
 
@@ -97,7 +160,7 @@ export const WorksSection = () => {
         className="flex flex-col items-center gap-6 mt-16"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+        transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
         viewport={{ once: true, amount: 0.4 }}
       >
         <p className="text-[#bcb9d1] text-center text-base md:text-lg max-w-md">
