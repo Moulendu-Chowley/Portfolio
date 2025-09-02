@@ -1,35 +1,68 @@
 export const projects = [
   {
-    title: "Project One",
-    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Hand One",
+    description: "Hand injuries in housing - A comprehensive case study exploring user experience design for healthcare applications.",
     image: "/project1.png",
-    year:"2023",
+    year: "2024",
     bulletPoints: [
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
-      "Aliquam in hendrerit urna.",
-      "Vestibulum auctor ornare leo, non suscipit."
+      "Healthcare UX/UI Design",
+      "User Research & Testing", 
+      "Accessibility Compliance"
     ]
   },
   {
-    title: "Project Two",
-    description: "Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
+    title: "POV Budapest",
+    description: "Conference for Visual Practices - Modern event website with dynamic content management and registration system.",
     image: "/project2.png",
-    year:"2023",
+    year: "2024",
     bulletPoints: [
-      "Pellentesque sit amet sapien fringilla.",
-      "Mattis ligula consectetur, ultrices mauris.",
-      "Maecenas vitae mattis tellus."
+      "Event Management Platform",
+      "Real-time Registration",
+      "Mobile-First Design"
     ]
   },
   {
-    title: "Project Three",
-    description: "Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit.",
+    title: "Unito Workspace",
+    description: "Add modularity to your space - Innovative workspace management solution with intuitive design patterns.",
     image: "/project3.png",
-    year:"2023",
+    year: "2024",
     bulletPoints: [
-      "Nullam quis imperdiet augue.",
-      "Vestibulum auctor ornare leo.",
-      "Non suscipit."
+      "Workspace Management",
+      "Modular Design System",
+      "Team Collaboration Tools"
+    ]
+  },
+  {
+    title: "Freeway Analytics",
+    description: "From SIM provider to IoT leader - Advanced analytics dashboard for telecommunications and IoT data visualization.",
+    image: "/project1.png",
+    year: "2023",
+    bulletPoints: [
+      "Data Visualization",
+      "IoT Dashboard Design",
+      "Real-time Analytics"
+    ]
+  },
+  {
+    title: "Digital Marketplace",
+    description: "E-commerce platform with advanced filtering and seamless checkout experience for modern consumers.",
+    image: "/project2.png", 
+    year: "2023",
+    bulletPoints: [
+      "E-commerce Platform",
+      "Payment Integration",
+      "Advanced Search & Filters"
+    ]
+  },
+  {
+    title: "Creative Portfolio",
+    description: "Minimalist portfolio showcase for creative professionals with smooth animations and modern aesthetics.",
+    image: "/project3.png",
+    year: "2023", 
+    bulletPoints: [
+      "Portfolio Design",
+      "Animation & Interactions",
+      "Creative Showcase"
     ]
   }
 ];
