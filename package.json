@@ -1,5 +1,5 @@
 {
-  "name": "moulendu-portfolio",
+  "name": "Moulendu-Portfolio",
   "version": "2.0.1",
   "private": true,
   "description": "Portfolio website of Moulendu Chowley, a UI/UX designer and developer based in India.",
@@ -14,7 +14,7 @@
   "homepage": "https://moulendu.in",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moulendu/portfolio.git"
+    "url": "https://github.com/Moulendu-Chowley/Portfolio.git"
   },
   "scripts": {
     "dev": "next dev --turbo",
