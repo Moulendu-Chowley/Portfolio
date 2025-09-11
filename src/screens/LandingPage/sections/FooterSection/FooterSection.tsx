@@ -19,7 +19,7 @@ export const FooterSection = () => {
     },
     {
       name: "Dribble",
-      imgSrc: "/Dribble.svg",
+      imgSrc: "/dribble.svg",
     },
   ];
 

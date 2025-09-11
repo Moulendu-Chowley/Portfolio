@@ -30,7 +30,7 @@ export const AboutMeSection = () => {
   // Social links
   const socialLinks = [
     {
-      icon: "/linkedin.svg",
+      icon: "/Linkedin.svg",
       label: "Moulendu Chowley",
       href: "https://www.linkedin.com/in/moulendu",
     },
