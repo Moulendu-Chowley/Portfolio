@@ -162,7 +162,6 @@ const WorksSectionContent = () => {
               index={5}
             />
           )}
-          )}
         </div>
       </div>
 
