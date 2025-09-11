@@ -1,8 +1,8 @@
 import { Button, SocialIconButton } from "@/components/shared/Button";
 import Image from "next/image";
-import Link from 'next/link';
+import Link from "next/link";
 
-export const FooterSection = ()=> {
+export const FooterSection = () => {
   // Social media icons data for mapping
   const socialIcons = [
     {
@@ -33,15 +33,15 @@ export const FooterSection = ()=> {
             <span className="text-white tracking-[-0.96px]">
               Ready to take{" "}
             </span>
-            <span className="text-[#cbacf9] tracking-[-0.96px]">your</span>
+            <span className="text-[#A5B4FC] tracking-[-0.96px]">your</span>
             <span className="text-white tracking-[-0.96px]">
               {" "}
               digital presence to the next level?
             </span>
           </h2>
           <p className="text-[#c1c2d3] text-base text-center tracking-[-0.16px] leading-[22.4px]">
-            Reach out to me today and let&apos;s discuss how I can help you achieve
-            your goals.
+            Reach out to me today and let&apos;s discuss how I can help you
+            achieve your goals.
           </p>
           <Link href="/contact">
             <Button className="px-6 py-3 text-sm md:text-lg">

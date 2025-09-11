@@ -10,8 +10,8 @@ const Card = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "rounded-[20px] border border-transparent bg-[linear-gradient(60deg,#100f2e,#0f0029)] outline outline-1 outline-offset-[-1px] outline-[#6971a2]/40 text-card-foreground shadow transition-all duration-200 hover:outline-[#906be7cc]",
-      className,
+      "rounded-[20px] border border-transparent bg-[linear-gradient(60deg,#090831,#040022)] outline-1 outline-offset-[-1px] outline-[#6971a2]/40 text-card-foreground shadow transition-all duration-200 hover:outline-[#4f46e5]",
+      className
     )}
     {...props}
   />
@@ -80,20 +80,44 @@ interface CardButtonProps {
   icon?: React.ReactNode;
 }
 
-const CardButton: React.FC<CardButtonProps> = ({ children, className = "", icon }) => (
+const CardButton: React.FC<CardButtonProps> = ({
+  children,
+  className = "",
+  icon,
+}) => (
   <div
-    className={`px-2 py-1 bg-[linear-gradient(60deg,#100f2e,#0f0029)] rounded-[40px] outline outline-[0.50px] outline-offset-[-0.50px] outline-[#6971a2]/40 flex justify-center items-center ${className}`}
+    className={`px-2 py-1 bg-[linear-gradient(60deg,#090831,#040022)] rounded-[40px] outline-[0.50px] outline-offset-[-0.50px] outline-[#6971a2]/40 flex justify-center items-center ${className}`}
   >
-    {icon && (typeof icon === 'string' ? (
-      <Image src={icon} alt="icon" width={14} height={14} className="w-[10px] h-[10px] md:w-[14px] md:h-[14px] mr-2" />
-    ) : (
-      <span className="w-[10px] h-[10px] md:w-[14px] md:h-[14px] flex items-center justify-center mr-2">{icon}</span>
-    ))}
-    <div className={`text-[#cccccc] text-[10px] md:text-[12px] font-medium [font-family:'Inter',Helvetica]${icon ? ' ml-2' : ''}`}>{children}</div>
+    {icon &&
+      (typeof icon === "string" ? (
+        <Image
+          src={icon}
+          alt="icon"
+          width={14}
+          height={14}
+          className="w-[10px] h-[10px] md:w-[14px] md:h-[14px] mr-1"
+        />
+      ) : (
+        <span className="w-[10px] h-[10px] md:w-[14px] md:h-[14px] flex items-center justify-center mr-1">
+          {icon}
+        </span>
+      ))}
+    <div
+      className={`text-[#cccccc] text-[10px] md:text-[12px] font-medium [font-family:'Inter',Helvetica]${
+        icon ? " ml-1" : ""
+      }`}
+    >
+      {children}
+    </div>
   </div>
 );
 
 export {
-    Card, CardButton, CardContent, CardDescription, CardFooter, CardHeader, CardTitle
+  Card,
+  CardButton,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
 };
-

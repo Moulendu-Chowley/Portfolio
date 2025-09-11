@@ -5,12 +5,30 @@
   --foreground: #171717;
   --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
   /* Gradients */
-  --gradient-radial-pagebreak: radial-gradient(ellipse 89.28% 89.28% at 50% 0%, #1c0050 0%, rgba(11,1,29,0.02) 57%);
-  --gradient-linear-pagebreak-line: linear-gradient(to right, transparent, white, transparent);
-  --gradient-button: linear-gradient(to right, #cbb8ed20, #0b011d20);
-  --gradient-cardbutton: linear-gradient(to right, #150138, #0c0023);
-  --gradient-statcard: linear-gradient(150deg, rgba(16,15,46,1) 0%, rgba(15,0,42,1) 100%);
-  --gradient-hero-grid: linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+  --gradient-radial-pagebreak: radial-gradient(
+    ellipse 89.28% 89.28% at 50% 0%,
+    #1e293b 0%,
+    rgba(15, 23, 42, 0.02) 57%
+  );
+  --gradient-linear-pagebreak-line: linear-gradient(
+    to right,
+    transparent,
+    white,
+    transparent
+  );
+  --gradient-button: linear-gradient(to right, #a5b4fc20, #1e293b20);
+  --gradient-cardbutton: linear-gradient(to right, #1e293b, #0f172a);
+  --gradient-statcard: linear-gradient(
+    150deg,
+    rgba(16, 15, 46, 1) 0%,
+    rgba(15, 0, 42, 1) 100%
+  );
+  --gradient-hero-grid: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
 }
 
 @theme inline {

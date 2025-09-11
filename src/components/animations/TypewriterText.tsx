@@ -1,9 +1,13 @@
 "use client";
 
-import { DM_Serif_Text } from 'next/font/google';
-import { useEffect, useState } from 'react';
+import { DM_Serif_Text } from "next/font/google";
+import { useEffect, useState } from "react";
 
-const dmSerifText = DM_Serif_Text({ subsets: ['latin'], weight: '400', style: ['italic'] });
+const dmSerifText = DM_Serif_Text({
+  subsets: ["latin"],
+  weight: "400",
+  style: ["italic"],
+});
 
 interface TypewriterTextProps {
   texts: string[];
@@ -11,8 +15,12 @@ interface TypewriterTextProps {
   className?: string;
 }
 
-const TypewriterText = ({ texts, period = 2000, className = "" }: TypewriterTextProps) => {
-  const [displayText, setDisplayText] = useState('');
+const TypewriterText = ({
+  texts,
+  period = 2000,
+  className = "",
+}: TypewriterTextProps) => {
+  const [displayText, setDisplayText] = useState("");
   const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
@@ -49,7 +57,7 @@ const TypewriterText = ({ texts, period = 2000, className = "" }: TypewriterText
           textIndex = (textIndex + 1) % texts.length;
           charIndex = 0;
           isDeleting = false;
-          setDisplayText('');
+          setDisplayText("");
           timeoutId = setTimeout(animate, 500);
         }
       }
@@ -62,7 +70,7 @@ const TypewriterText = ({ texts, period = 2000, className = "" }: TypewriterText
 
     // Cursor blink
     const cursorTimer = setInterval(() => {
-      setShowCursor(prev => !prev);
+      setShowCursor((prev) => !prev);
     }, 500);
 
     return () => {
@@ -73,7 +81,9 @@ const TypewriterText = ({ texts, period = 2000, className = "" }: TypewriterText
   }, [texts, period]);
 
   return (
-    <span className={`${dmSerifText.className} italic text-[#916be7] relative ${className}`}>
+    <span
+      className={`${dmSerifText.className} italic text-[#A5B4FC] relative ${className}`}
+    >
       {displayText}
       {showCursor && <span className="animate-pulse">|</span>}
     </span>

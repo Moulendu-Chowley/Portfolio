@@ -3,22 +3,22 @@ import { Button } from "@/components/shared/Button";
 import { cn } from "@/lib/utils";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 import {
-    AnimatePresence,
-    motion,
-    useMotionValueEvent,
-    useScroll,
+  AnimatePresence,
+  motion,
+  useMotionValueEvent,
+  useScroll,
 } from "framer-motion";
 import Image from "next/image";
-import Link from 'next/link';
+import Link from "next/link";
 import { useRef, useState } from "react";
 
 const DEFAULT_NAV_ITEMS = [
+  { name: "Work", link: "/works" },
   { name: "About", link: "#about" },
   { name: "Benefits", link: "#benefits" },
-  { name: "Work", link: "#work" },
   { name: "Praise", link: "#praise" },
   { name: "FAQ", link: "#faq" },
-  { name: "Blogs", link: "/blogs" },
+  { name: "Blogs", link: "/coming-soon" },
 ];
 
 const Navbar = () => {
@@ -64,12 +64,12 @@ const Navbar = () => {
           visible && "bg-white/80 dark:bg-neutral-950/50"
         )}
       >
-        <a
-          href="#"
+        <Link
+          href="/"
           className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
         >
           <Image src="/logo.svg" alt="logo" width={110} height={110} />
-        </a>
+        </Link>
         <motion.div
           className={cn(
             "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-zinc-600 transition duration-200 hover:text-zinc-800 lg:flex lg:space-x-2"
@@ -79,7 +79,7 @@ const Navbar = () => {
             <Link
               className="relative px-4 py-2 text-neutral-600 dark:text-neutral-300"
               key={`link-${idx}`}
-              href={item.link.startsWith('#') ? `/${item.link}` : item.link}
+              href={item.link.startsWith("#") ? `/${item.link}` : item.link}
             >
               <span className="relative z-20">{item.name}</span>
             </Link>
@@ -113,12 +113,12 @@ const Navbar = () => {
         )}
       >
         <div className="flex w-full flex-row items-center justify-between">
-          <a
-            href="#"
+          <Link
+            href="/"
             className="relative z-20 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
           >
             <Image src="/logo.svg" alt="logo" width={100} height={100} />
-          </a>
+          </Link>
           <button
             className="z-30 p-2"
             onClick={() => setMobileOpen((v) => !v)}
@@ -142,14 +142,18 @@ const Navbar = () => {
               {DEFAULT_NAV_ITEMS.map((item, idx) => (
                 <Link
                   key={`mobile-link-${idx}`}
-                  href={item.link.startsWith('#') ? `/${item.link}` : item.link}
+                  href={item.link.startsWith("#") ? `/${item.link}` : item.link}
                   className="w-full px-2 py-3 text-lg font-medium text-neutral-800 dark:text-neutral-200"
                   onClick={() => setMobileOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <Link href="/contact" className="mt-4 w-full" onClick={() => setMobileOpen(false)}>
+              <Link
+                href="/contact"
+                className="mt-4 w-full"
+                onClick={() => setMobileOpen(false)}
+              >
                 <Button className="w-full h-[40px]">Contact me</Button>
               </Link>
             </motion.div>

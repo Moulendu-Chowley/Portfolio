@@ -1,6 +1,6 @@
-'use client';
+"use client";
 import { motion } from "framer-motion";
-import TypewriterText from '../../../../components/animations/TypewriterText';
+import TypewriterText from "../../../../components/animations/TypewriterText";
 import ProfileCard from "../../../../components/cards/ProfileCard";
 import SocialLinksCard from "../../../../components/cards/SocialLinksCard";
 import StatCard from "../../../../components/cards/StatCard";
@@ -29,15 +29,41 @@ export const AboutMeSection = () => {
 
   // Social links
   const socialLinks = [
-    { icon: "/linkedin.svg", label: "Moulendu Chowley", href: "https://www.linkedin.com/in/moulendu" },
-    { icon: "/instagram.svg", label: "moulendu.ux", href: "https://www.instagram.com/moulendu.ux" },
-    { icon: "/instagram.svg", label: "moulendu.dev", href: "https://www.instagram.com/moulendu.dev" },
-    { icon: "/dribble.svg", label: "Moulendu Chowley", href: "https://dribbble.com/Moulendu" },
-    { icon: "/github.svg", label: "Moulendu Chowley", href: "https://github.com/Moulendu-Chowley" },
+    {
+      icon: "/linkedin.svg",
+      label: "Moulendu Chowley",
+      href: "https://www.linkedin.com/in/moulendu",
+    },
+    {
+      icon: "/instagram.svg",
+      label: "moulendu.ux",
+      href: "https://www.instagram.com/moulendu.ux",
+    },
+    {
+      icon: "/instagram.svg",
+      label: "moulendu.dev",
+      href: "https://www.instagram.com/moulendu.dev",
+    },
+    {
+      icon: "/dribble.svg",
+      label: "Moulendu Chowley",
+      href: "https://dribbble.com/Moulendu",
+    },
+    {
+      icon: "/github.svg",
+      label: "Moulendu Chowley",
+      href: "https://github.com/Moulendu-Chowley",
+    },
   ];
 
   return (
-    <section id="about" className="flex flex-col items-center w-full relative bg-[#0b011d] mb-24">
+    <section
+      id="about"
+      className="flex flex-col items-center w-full relative mb-24"
+    >
+      {/* Blue gradient background elements */}
+      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#4F46E5]/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#4F46E5]/8 rounded-full blur-3xl" />
       <PageBreak />
       <h2 className="w-full font-['Inter',Helvetica] font-semibold text-white text-[48px] md:text-[64px] text-center tracking-[0.50px] leading-[76.8px] mb-12 md:-mt-16 relative z-10">
         About Me.
@@ -56,15 +82,27 @@ export const AboutMeSection = () => {
             name="Moulendu Chowley"
             role={
               <TypewriterText
-                texts={["Graphic Designer", "UI/UX Designer", "Front-end Developer", "Back-end Developer", "Freelancer"]}
+                texts={[
+                  "Graphic Designer",
+                  "UI/UX Designer",
+                  "Front-end Developer",
+                  "Back-end Developer",
+                  "Freelancer",
+                ]}
                 period={1000}
               />
             }
             description={
               <>
-                A UI/UX designer and full-stack developer crafting high-performance websites that are both elegant and effective.<br />
-                I combine intuitive design with clean, scalable code to create seamless digital experiences. From responsive layouts to secure architecture and SEO-friendly builds, I focus on delivering results that look great and work flawlessly.<br />
-                I help bring ideas to life with clarity and purpose. Thanks for visiting my space.
+                A UI/UX designer and full-stack developer crafting
+                high-performance websites that are both elegant and effective.
+                <br />
+                I combine intuitive design with clean, scalable code to create
+                seamless digital experiences. From responsive layouts to secure
+                architecture and SEO-friendly builds, I focus on delivering
+                results that look great and work flawlessly.
+                <br />I help bring ideas to life with clarity and purpose.
+                Thanks for visiting my space.
               </>
             }
             tags={tags}

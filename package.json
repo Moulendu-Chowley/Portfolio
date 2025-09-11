@@ -1,6 +1,6 @@
 {
   "name": "moulendu-portfolio",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "private": true,
   "description": "Portfolio website of Moulendu Chowley, a UI/UX designer and developer based in India.",
   "keywords": [
@@ -23,6 +23,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@radix-ui/react-avatar": "^1.1.1",
     "@radix-ui/react-navigation-menu": "^1.2.1",
     "@radix-ui/react-separator": "^1.1.0",
