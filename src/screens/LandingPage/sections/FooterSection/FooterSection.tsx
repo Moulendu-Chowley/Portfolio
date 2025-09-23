@@ -11,7 +11,7 @@ export const FooterSection = () => {
     },
     {
       name: "LinkedIn",
-      imgSrc: "/Linkedin.svg",
+      imgSrc: "/linkedin.svg",
     },
     {
       name: "GitHub",
