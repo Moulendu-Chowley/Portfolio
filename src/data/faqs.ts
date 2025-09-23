@@ -25,7 +25,7 @@ export const faqTabs = [
       {
         question: "Can you teach me how to build websites?",
         answer:
-          "Yes, I offer mentoring services for aspiring developers. We can arrange sessions tailored to your current skill level and learning objectives.",
+          "No, I don't offer mentoring services.",
       },
     ],
   },
