@@ -86,6 +86,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## 👤 Author
 
 **Moulendu Chowley**
+
 - Website: [moulendu.in](https://moulendu.in)
 - LinkedIn: [Moulendu Chowley](https://linkedin.com/in/moulendu-chowley)
 - GitHub: [Moulendu-Chowley](https://github.com/Moulendu-Chowley)
