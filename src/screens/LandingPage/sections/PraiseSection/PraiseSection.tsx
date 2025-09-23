@@ -21,7 +21,7 @@ const PraiseSection = () => (
     <div className="w-full max-w-2xl mx-auto flex flex-col items-center justify-center">
       <div className="w-full p-8 rounded-2xl bg-[linear-gradient(60deg,#090831,#040022)] outline-1 outline-[#6971a2]/40 shadow-lg flex flex-col items-center text-center relative">
         <p className="text-white text-lg md:text-xl font-normal mb-6">
-          Henry&apos;s work is bloody incredible.
+          Moulendu&apos;s work is bloody incredible.
           <br />
           Please don&apos;t hire him..
           <br />
