@@ -110,13 +110,6 @@ const WorksSectionContent = () => {
             className="col-span-1 row-span-1"
             index={3}
           />
-
-          {/* Wide project */}
-          <BentoProjectCard
-            {...projects[4]}
-            className="col-span-2 row-span-1"
-            index={4}
-          />
         </div>
 
         {/* Mobile Grid Layout */}
