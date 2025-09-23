@@ -133,36 +133,4 @@ export const projects = [
     solution:
       "Leveraged cutting-edge web technologies including Next.js for optimal performance, Tailwind CSS for responsive design, and Framer Motion for engaging animations. The result is a visually striking portfolio that achieves 95+ Lighthouse scores while providing smooth, engaging interactions that effectively showcase both design sensibility and technical expertise.",
   },
-  {
-    tag: "E-commerce",
-    title: "Digital Marketplace",
-    description:
-      "E-commerce platform with advanced filtering and seamless checkout experience for modern consumers.",
-    image: "/project2.png",
-    year: "2024",
-    bulletPoints: [
-      "Advanced product search and filtering system",
-      "Secure payment integration with multiple gateways",
-      "Real-time inventory management",
-      "Mobile-responsive design for all devices",
-    ],
-    detailedDescription:
-      "Digital Marketplace is a comprehensive e-commerce platform designed to provide seamless shopping experiences for modern consumers. With intuitive navigation, powerful search capabilities, and secure payment processing, it enables businesses to create engaging online stores that drive conversions and customer satisfaction.",
-    technologies: [
-      "React",
-      "Node.js",
-      "MongoDB",
-      "Stripe API",
-      "Redis",
-      "AWS S3",
-    ],
-    links: {
-      live: "coming-soon",
-      github: "https://github.com/yourusername/digital-marketplace",
-    },
-    challenge:
-      "Creating an e-commerce platform that balances feature richness with simplicity, while ensuring fast load times, secure transactions, and an intuitive user experience across all devices and user types.",
-    solution:
-      "Developed a scalable architecture using modern technologies like React and Node.js, implemented advanced caching strategies with Redis, and integrated multiple payment gateways. The result is a fast, secure, and user-friendly platform that provides excellent shopping experiences.",
-  },
 ];

@@ -16,7 +16,7 @@ export const Button = ({
     <ShadcnButton
       className={`flex items-center justify-center ${
         icon ? "gap-2.5" : ""
-      } relative rounded-[40px] outline-1 outline-[#6971a2]/40 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg active:translate-y-0 active:outline-[#4F46E5] active:outline-2 focus:outline-[#4F46E5] focus:outline-2 ${
+      } relative px-2 py-1.5 rounded-[40px] outline-1 outline-[#6971a2]/40 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg active:translate-y-0 active:outline-[#4F46E5] active:outline-2 focus:outline-[#4F46E5] focus:outline-2 ${
         className || ""
       }`}
       style={{ background: "var(--gradient-button)" }}
