@@ -120,11 +120,11 @@ const WorksSectionContent = () => {
         </div>
 
         {/* Mobile Grid Layout */}
-        <div className="grid md:hidden grid-cols-2 gap-4">
+        <div className="grid md:hidden grid-cols-1 gap-4">
           {/* Featured project spans full width */}
           <BentoProjectCard
             {...projects[0]}
-            className="col-span-2 h-[280px]"
+            className="col-span-1 h-[280px]"
             index={0}
           />
 
@@ -144,24 +144,9 @@ const WorksSectionContent = () => {
           {/* Wide project spans full width */}
           <BentoProjectCard
             {...projects[3]}
-            className="col-span-2 h-[200px]"
+            className="col-span-1 h-[200px]"
             index={3}
           />
-
-          {/* Two more projects */}
-          <BentoProjectCard
-            {...projects[4]}
-            className="col-span-1 h-[220px]"
-            index={4}
-          />
-
-          {projects[5] && (
-            <BentoProjectCard
-              {...projects[5]}
-              className="col-span-1 h-[220px]"
-              index={5}
-            />
-          )}
         </div>
       </div>
 
